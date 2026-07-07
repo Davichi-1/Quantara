@@ -4,6 +4,9 @@ import svgr from 'vite-plugin-svgr';
 import EnvironmentPlugin from 'vite-plugin-environment';
 import path from 'path';
 import tailwindcss from '@tailwindcss/vite';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 export default defineConfig({
   server: {
